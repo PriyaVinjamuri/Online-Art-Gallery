@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+  .back-changes {
+    background-color: aliceblue;
+  }
+
+  .row {
+    padding-bottom: 10px;
+  }
+</style>
+
+
+<!-- Categories -->
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <div class="icon-bar-cat">
+    {% for tag in tags %}
+    <a href="cat/{{tag.tag}}">{{tag.tag}}</a>
+    {% endfor %}
+  </div>
+</form>
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-4 ">
+      <a href="description/1" class="d-block photo-item">
+        <div class="card card-inverse card-info">
+          <img class="card-img-top" src="https://tse1.mm.bing.net/th?id=OIP.Wil6lbN1VdMWFrVp0D5N4AHaJ4&pid=Api&P=0&h=180"/>
+          <div class="card-block">
+            <h4 class="card-title">THE SCREAM</h4>
+            <div class="card-text">
+              <span class="meta"> Status : Out of Stock </span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="meta">
+              <center> Price : ₹ 100 </center>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 ">
+      <a href="description/2" class="d-block photo-item">
+        <div class="card card-inverse card-info">
+          <img class="card-img-top" src="https://wallpaperaccess.com/full/3176562.jpg" />
+          <div class="card-block">
+            <h4 class="card-title">MONALISA</h4>
+            <div class="card-text">
+              <span class="meta"> Status : In Stock </span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="meta">
+              <center> Price : ₹ 200 </center>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Add more items here -->
+
+    <div class="col-sm-6 col-md-4 col-lg-4 ">
+      <a href="description/3" class="d-block photo-item">
+        <div class="card card-inverse card-info">
+          <img class="card-img-top" src="https://tse2.mm.bing.net/th?id=OIP.PKyxcjuVcMXSuQh4M5-DxQHaJQ&pid=Api&P=0&h=180" />
+          <div class="card-block">
+            <h4 class="card-title">The Paradise</h4>
+            <div class="card-text">
+              <span class="meta"> Status : In Stock </span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="meta">
+              <center> Price : ₹ 150 </center>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 ">
+      <a href="description/4" class="d-block photo-item">
+        <div class="card card-inverse card-info">
+          <img class="card-img-top" src="https://tse3.mm.bing.net/th?id=OIP.3MyaiXI1GYAvW2uF3b5U0AHaHk&pid=Api&P=0&h=180"/>
+          <div class="card-block">
+            <h4 class="card-title">Butterfly</h4>
+            <div class="card-text">
+              <span class="meta"> Status : Out of Stock </span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="meta">
+              <center> Price : ₹ 180 </center>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 ">
+      <a href="description/5" class="d-block photo-item">
+        <div class="card card-inverse card-info">
+          <img class="card-img-top" src="https://tse4.mm.bing.net/th?id=OIP.MA-jG8hr_98Dj0ATwFEy9AHaEo&pid=Api&P=0&h=180" />
+          <div class="card-block">
+            <h4 class="card-title">Starry Night</h4>
+            <div class="card-text">
+              <span class="meta"> Status : In Stock </span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="meta">
+              <center> Price : ₹ 250 </center>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+<div class="col-sm-6 col-md-4 col-lg-4 ">
+      <a href="description/6" class="d-block photo-item">
+        <div class="card card-inverse card-info">
+          <img class="card-img-top" src="https://i.pinimg.com/originals/bc/ad/1c/bcad1ce740afc740162de58e3a77a282.jpg" />
+          <div class="card-block">
+            <h4 class="card-title">The Princess</h4>
+            <div class="card-text">
+              <span class="meta"> Status : Out of Stock </span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="meta">
+              <center> Price : ₹ 120 </center>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 ">
+      <a href="description/7" class="d-block photo-item">
+        <div class="card card-inverse card-info">
+          <img class="card-img-top" src="https://cache.lovethispic.com/uploaded_images/351876-Rose-Painting.jpg" />
+          <div class="card-block">
+            <h4 class="card-title">Rose</h4>
+            <div class="card-text">
+              <span class="meta"> Status : In Stock </span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="meta">
+              <center> Price : ₹ 300 </center>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+{% endblock %}
